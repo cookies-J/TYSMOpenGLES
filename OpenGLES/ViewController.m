@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "TYSMGLBlankView.h"
 
 @interface ViewController ()
 
@@ -16,8 +17,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    TYSMGLBlankView *blankView = [[TYSMGLBlankView alloc] initWithFrame:self.view.bounds];
+    [self.view addSubview:blankView];
     // Do any additional setup after loading the view.
 }
-
 
 @end
